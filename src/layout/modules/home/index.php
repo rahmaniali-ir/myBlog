@@ -15,6 +15,8 @@ function getName($file) {
     return $name;
 }
 
+$images = glob('src/image/*');
+
 ?>
 <header class="overview">
     <div class="right">

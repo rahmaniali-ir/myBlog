@@ -55,7 +55,7 @@ function loadModule() {
         require_once('src/layout/module/' . $moduleName . '.php');
         $loadedModuleName = $moduleName;
     } else {
-        require_once('src/layout/module/404.php');
+        require_once('src/layout/module/404/index.php');
         $loadedModuleName = '404';
     }
 
