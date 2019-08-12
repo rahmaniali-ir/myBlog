@@ -13,7 +13,7 @@ function getName($file) {
     return $name;
 }
 
-$images = glob('src/img/*');
+$images = glob('src/image/*');
 shuffle($images);
 
 ?>
