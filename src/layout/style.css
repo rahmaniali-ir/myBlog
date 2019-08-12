@@ -59,8 +59,9 @@ img.loaded {
 /* Document */
 
 body > nav {
-    background-color: var(--grey10);
     align-content: center;
+    background-color: var(--grey10);
+    border-bottom: solid 1px var(--grey9);
     box-sizing: border-box;
     display: flex;
     justify-content: center;
