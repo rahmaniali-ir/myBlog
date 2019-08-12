@@ -34,7 +34,7 @@ shuffle($images);
         <div class="right">
             <h1>سلام، علی رحمانی اینجاست!</h1>
             <p>
-                <img src="src/img/ali.jpg" alt="Ali Rahmani" class="image">
+                <img src="src/image/ali.jpg" alt="Ali Rahmani" class="image">
                 من دانشجوی کاردانی نرم افزار در دانشگاه محمد منتظری مشهدم.
                 کامپیوتر ها رو دوست دارم، و دوست دارم بقیه هم دوستش داشته باشن
                 :)
