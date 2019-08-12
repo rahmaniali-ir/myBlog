@@ -290,9 +290,9 @@ section.content main .post article {
 }
 
 section.content main .post article .image {
-    height: 4rem;
+    height: 6rem;
     margin-left: 1rem;
-    width: 4rem;
+    width: 6rem;
 }
 
 section.content main .post article .image img {
@@ -300,4 +300,10 @@ section.content main .post article .image img {
     height: 100%;
     object-fit: cover;
     width: 100%;
+}
+
+section.content main .post article .details h1 {
+    color: var(--grey1);
+    font-size: 1rem;
+    margin: 0;
 }
