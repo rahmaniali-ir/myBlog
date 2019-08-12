@@ -69,6 +69,7 @@ body > nav {
     padding: .5em var(--sidePadding);
     position: fixed;
     top: 0;
+    user-select: none;
     width: 100%;
     z-index: 10;
 }

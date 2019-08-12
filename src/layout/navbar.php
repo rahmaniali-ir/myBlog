@@ -1,4 +1,4 @@
 <nav>
-    <button class="search"><?= icon('search'); ?></button>
+    <button class="search">جستجو</button>
     <h1>Ali Rahmani</h1>
 </nav>
