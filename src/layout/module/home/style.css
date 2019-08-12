@@ -281,6 +281,7 @@ section.content main {
 
 section.content main .post {
     display: block;
+    margin-bottom: 1rem;
     text-decoration: none;
 }
 
