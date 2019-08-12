@@ -281,19 +281,19 @@ section.content main {
 
 section.content main .post {
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-decoration: none;
 }
 
 section.content main .post article {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
 }
 
 section.content main .post article .image {
-    height: 6rem;
+    height: 5rem;
     margin-left: 1rem;
-    width: 6rem;
+    width: 5rem;
 }
 
 section.content main .post article .image img {
@@ -303,7 +303,7 @@ section.content main .post article .image img {
     width: 100%;
 }
 
-section.content main .post article .details h1 {
+section.content main .post article .details h2 {
     color: var(--grey1);
     font-size: 1rem;
     margin: 0;
