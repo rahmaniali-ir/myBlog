@@ -71,8 +71,9 @@ body > nav {
 }
 
 body > nav h1 {
-    color: var(--grey2);
+    color: var(--grey5);
     font-size: 1em;
+    letter-spacing: 0.3em;
     text-transform: uppercase;
     margin: 0;
 }
