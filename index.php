@@ -26,7 +26,7 @@ shuffle($images);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ali Rahmani</title>
 
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/layout/style.css">
 </head>
 
 <body>
@@ -105,7 +105,7 @@ shuffle($images);
         </main>
     </section>
 
-    <script src="src/script.js"></script>
+    <script src="src/layout/script.js"></script>
 </body>
 
 </html>
