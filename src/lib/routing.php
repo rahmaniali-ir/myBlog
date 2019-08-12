@@ -51,8 +51,8 @@ function loadModule() {
         $moduleName = 'home';
     }
     
-    if(file_exists('src/layout/module/' . $moduleName . '.php')) {
-        require_once('src/layout/module/' . $moduleName . '.php');
+    if(file_exists('src/layout/module/' . $moduleName . '/index.php')) {
+        require_once('src/layout/module/' . $moduleName . '/index.php');
         $loadedModuleName = $moduleName;
     } else {
         require_once('src/layout/module/404/index.php');

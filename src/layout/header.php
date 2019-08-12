@@ -2,7 +2,7 @@
 
 if(!function_exists('getTitle')) {
     function getTitle() {
-        return 'LearnPath';
+        return SITE_TITLE;
     }
 }
 
