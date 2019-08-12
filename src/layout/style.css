@@ -64,18 +64,28 @@ body > nav {
     border-bottom: solid 1px var(--grey9);
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: .5em;
     position: sticky;
     top: 0;
     z-index: 10;
 }
 
+body > nav .search {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+body > nav .search svg {
+    fill: var(--grey5);
+    height: 1rem;
+    width: 1rem;
+}
+
 body > nav h1 {
-    color: var(--grey5);
+    color: var(--grey3);
     font-size: 1em;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
     margin: 0;
 }
 
