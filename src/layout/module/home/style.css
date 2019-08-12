@@ -278,3 +278,26 @@ section.content aside .categories a svg {
 section.content main {
     flex: 3;
 }
+
+section.content main .post {
+    display: block;
+    text-decoration: none;
+}
+
+section.content main .post article {
+    align-items: center;
+    display: flex;
+}
+
+section.content main .post article .image {
+    height: 4rem;
+    margin-left: 1rem;
+    width: 4rem;
+}
+
+section.content main .post article .image img {
+    border-radius: var(--radius);
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}

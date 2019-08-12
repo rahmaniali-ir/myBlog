@@ -80,11 +80,17 @@ $images = glob('src/image/*');
 
     <main>
         <?php for($i = 3; $i < 8; $i++): ?>
-        <article>
-            <header>
-                <h1>POST1</h1>
-            </header>
-        </article>
+        <a href="#" class="post">
+            <article>
+                <div class="image">
+                    <img src="<?= $images[$i]; ?>" alt="#">
+                </div>
+
+                <div class="details">
+                    <h2>عنوان مطلب</h2>
+                </div>
+            </article>
+        </a>
         <?php endfor; ?>
     </main>
 </section>
