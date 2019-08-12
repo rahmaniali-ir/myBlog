@@ -77,7 +77,8 @@ body > nav {
 body > nav .search {
     background-color: transparent;
     border: none;
-    color: var(--grey6);
+    color: var(--grey5);
+    cursor: pointer;
     font-family: inherit;
     outline: none;
 }

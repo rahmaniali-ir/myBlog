@@ -79,17 +79,13 @@ $images = glob('src/image/*');
     </aside>
 
     <main>
+        <?php for($i = 3; $i < 8; $i++): ?>
         <article>
             <header>
                 <h1>POST1</h1>
             </header>
         </article>
-
-        <article>
-            <header>
-                <h1>POST2</h1>
-            </header>
-        </article>
+        <?php endfor; ?>
     </main>
 </section>
 <?php
