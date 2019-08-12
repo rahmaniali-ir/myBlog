@@ -58,6 +58,21 @@ img.loaded {
 
 /* Document */
 
+body > nav {
+    align-content: center;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: .5em;
+    position: sticky;
+    top: 0;
+}
+
+body > nav h1 {
+    color: var(--grey1);
+    font-size: 1.5em;
+    margin: 0;
+}
+
 body > header,
 body > section {
     align-items: center;
