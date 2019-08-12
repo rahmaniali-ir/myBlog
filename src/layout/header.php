@@ -16,8 +16,8 @@ if(!function_exists('getTitle')) {
     <title><?= getTitle(); ?></title>
 
     <link rel="stylesheet" href="<?= getHomeURL('src/layout/style.css'); ?>">
-    <?php if(file_exists('src/layout/module/' . loadedModule() . '.css')): ?>
-    <link rel="stylesheet" href="src/layout/module/<?= loadedModule(); ?>.css">
+    <?php if(file_exists('src/layout/module/' . loadedModule() . '/style.css')): ?>
+    <link rel="stylesheet" href="src/layout/module/<?= loadedModule(); ?>/style.css">
     <?php endif; ?>
 </head>
 <body>
