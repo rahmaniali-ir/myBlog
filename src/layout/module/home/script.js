@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let top = window.scrollY;
 
         posts.forEach((post, index) => {
-            post.style.top = -((index * (top / posts.length)) + (top / 4)) + 'px';
+            post.style.top = -((index * (top / (posts.length * 2))) + (top / 2)) + 'px';
         });
     });
 });
