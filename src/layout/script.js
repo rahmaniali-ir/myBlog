@@ -11,6 +11,12 @@ images.forEach(image => {
     }
 });
 
-// document.addEventListener('DOMContentLoaded', () => {
-    
-// });
+document.addEventListener('DOMContentLoaded', () => {
+    let posts = document.querySelectorAll('.overview .post');
+
+    window.addEventListener('scroll', e => {
+        posts.forEach(post => {
+            post.style.top = -(e.scrollTop / 2);
+        });
+    });
+});
