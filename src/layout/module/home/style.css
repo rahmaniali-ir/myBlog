@@ -33,6 +33,24 @@ header.greeting p a:focus {
     color: var(--grey4);
 }
 
+header.greeting .social-box {
+    margin-top: 1rem;
+}
+
+header.greeting .social-box a {
+    display: inline-block;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+header.greeting .social-box a svg {
+    display: block;
+    fill: var(--grey4);
+    height: 1rem;
+    width: 1rem;
+}
+
+/* Greeting left section */
 header.greeting .left {
     flex: 2;
     height: 50vh;

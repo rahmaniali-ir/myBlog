@@ -17,6 +17,24 @@ function getName($file) {
 
 $images = glob('src/image/*');
 
+$socialMedias = [
+    [
+        'title' => 'Twitter',
+        'url' => '#',
+        'icon' => 'twitter'
+    ],
+    [
+        'title' => 'Github',
+        'url' => '#',
+        'icon' => 'github'
+    ],
+    [
+        'title' => 'Codepen',
+        'url' => '#',
+        'icon' => 'codepen'
+    ]
+];
+
 ?>
 <header class="greeting">
     <div class="right">
@@ -29,7 +47,13 @@ $images = glob('src/image/*');
             اینجا چیزایی که برام جالبن رو به اشتراک میزارم.
         </p>
 
-        <div class="social-box"></div>
+        <div class="social-box">
+            <?php foreach($socialMedias as $social): ?>
+            <a href="<?= $social['url']; ?>" title="<?= $social['title']; ?>">
+                <?= icon($social['icon']); ?>
+            </a>
+            <?php endforeach; ?>
+        </div>
     </div>
 
     <div class="left">
