@@ -13,7 +13,7 @@ images.forEach(image => {
 
 document.addEventListener('DOMContentLoaded', () => {
     let posts = document.querySelectorAll('.overview .post');
-
+    console.log('test');
     window.addEventListener('scroll', e => {
         console.log(e.scrollTop);
         posts.forEach(post => {
