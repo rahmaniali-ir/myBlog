@@ -9,17 +9,6 @@ header.greeting .right {
     padding-left: 5vw;
 }
 
-header.greeting .image {
-    border-radius: 50%;
-    box-sizing: border-box;
-    float: right;
-    height: 5em;
-    object-fit: cover;
-    margin-left: .5em;
-    shape-outside: ellipse(40%, 40%);
-    width: 5em;
-}
-
 header.greeting h1 {
     color: var(--grey1);
     font-size: 1.5rem;
