@@ -6,12 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
     window.addEventListener('scroll', e => {
         let top = window.scrollY;
-        let level = overviewAnimHeight / posts.length;
         let newPos = 0;
 
         posts.forEach((post, index) => {
             if(top > overviewAnimHeight) {
-                newPos = top - (index * level);
+                newPos =  -((index * 1.5) + top);
             }
 
             post.style.top = newPos + 'px';
