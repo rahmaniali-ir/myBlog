@@ -1,6 +1,6 @@
 
 let images = document.querySelectorAll('img');
-
+console.log('test');
 images.forEach(image => {
     image.addEventListener('load', () => {
         image.classList.add('loaded');
@@ -10,7 +10,7 @@ images.forEach(image => {
         image.classList.add('loaded');
     }
 });
-console.log('test');
+
 document.addEventListener('DOMContentLoaded', () => {
     let posts = document.querySelectorAll('.overview .post');
     
