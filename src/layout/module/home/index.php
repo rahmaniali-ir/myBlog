@@ -45,6 +45,16 @@ $categories = [
         'name' => 'life',
         'title' => 'زندگی',
         'color' => '#0fa'
+    ],
+    [
+        'name' => 'book',
+        'title' => 'کتاب',
+        'color' => '#9500FF'
+    ],
+    [
+        'name' => 'goof',
+        'title' => 'مسخره بازی',
+        'color' => '#FDB90A'
     ]
 ];
 
