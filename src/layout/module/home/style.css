@@ -264,6 +264,7 @@ section.content aside .categories a .icon {
 
 section.content aside .categories a .icon span {
     left: 50%;
+    line-height: 1em;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -272,6 +273,12 @@ section.content aside .categories a .icon span {
 section.content aside .categories a .name {
     color: var(--grey5);
     font-size: 1em;
+    transition: all .3s ease;
+}
+
+section.content aside .categories a:hover .name,
+section.content aside .categories a:focus .name {
+    color: var(--grey2);
 }
 
 section.content main {
