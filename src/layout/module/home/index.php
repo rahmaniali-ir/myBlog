@@ -39,18 +39,12 @@ $categories = [
     [
         'name' => 'programming',
         'title' => 'برنامه نویسی',
-        'color' => [
-            '#0ac',
-            '#f55'
-        ]
+        'color' => '#0ac'
     ],
     [
         'name' => 'life',
         'title' => 'زندگی',
-        'color' => [
-            '#0fa',
-            '#580'
-        ]
+        'color' => '#0fa'
     ]
 ];
 
@@ -105,19 +99,9 @@ $categories = [
         </header>
 
         <section class="categories">
-            <?php
-            foreach($categories as $category):
-            
-            if(count($category['color']) == 1) {
-                $color = $category['color'];
-            } else {
-                $color = 'linear-gradient(to bottom left, ';
-                $color .= implode(', ', $category['color']);
-                $color .= ')';
-            }
-            ?>
+            <?php foreach($categories as $category): ?>
             <a href="#<?= $category['name']; ?>">
-                <div class="icon" style="background: <?= $color; ?> ;">
+                <div class="icon" style="color: <?= $category['color']; ?> ;">
                     <span><?= mb_substr($category['title'], 0, 1); ?></span>
                 </div>
 

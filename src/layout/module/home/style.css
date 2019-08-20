@@ -250,8 +250,9 @@ section.content aside .categories a {
 }
 
 section.content aside .categories a .icon {
+    background-color: currentColor;
     border-radius: var(--radius);
-    color: #fff;
+    box-shadow: 0 5px 8px -5px currentColor;
     display: inline-block;
     font-size: 1rem;
     font-weight: bold;
@@ -263,6 +264,7 @@ section.content aside .categories a .icon {
 }
 
 section.content aside .categories a .icon span {
+    color: #fff;
     left: 50%;
     line-height: 1em;
     position: absolute;
