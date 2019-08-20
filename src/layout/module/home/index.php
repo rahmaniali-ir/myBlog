@@ -20,18 +20,18 @@ $images = glob('src/image/*');
 $socialMedias = [
     [
         'title' => 'Twitter',
-        'url' => '#',
+        'url' => 'https://twitter.com/rahmaniali_ir',
         'icon' => 'twitter'
     ],
     [
         'title' => 'Github',
-        'url' => '#',
+        'url' => 'https://github.com/rahmaniali-ir',
         'icon' => 'github'
     ],
     [
         'title' => 'Codepen',
         'url' => '#',
-        'icon' => 'codepen'
+        'icon' => 'https://codepen.io/rahmaniali_ir'
     ]
 ];
 
