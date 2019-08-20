@@ -119,8 +119,9 @@ $categories = [
             }
             ?>
             <a href="#<?= $category['name']; ?>">
-                <img src="src/image/<?= $category['image']; ?>" alt="<?= $category['name']; ?>">
-                <div class="gradient" style="background: <?= $color; ?> ;"></div>
+                <div class="icon" style="background: <?= $color; ?> ;">
+                    <?= $category['title'][0]; ?>
+                </div>
 
                 <span><?= $category['title']; ?></span>
             </a>

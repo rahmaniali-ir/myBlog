@@ -244,7 +244,7 @@ section.content aside .categories a {
     justify-content: flex-start;
     margin-bottom: .5rem;
     overflow: hidden;
-    padding: .5rem 1rem;
+    padding: 1.5rem 1rem;
     position: relative;
     text-decoration: none;
     transition: all .3s ease;
@@ -254,24 +254,13 @@ section.content aside .categories a:hover,
 section.content aside .categories a:focus {
 }
 
-section.content aside .categories a img,
-section.content aside .categories a .gradient {
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
-
-section.content aside .categories a img {
-    filter: grayscale(100%);
-    object-fit: cover;
-    z-index: -2;
-}
-
-section.content aside .categories a .gradient {
-    opacity: .4;
-    z-index: -1;
+section.content aside .categories a .icon {
+    border-radius: var(--radius);
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .5rem;
 }
 
 section.content aside .categories a span {
