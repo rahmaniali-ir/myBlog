@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', e => {
         console.log(e.scrollTop);
         posts.forEach(post => {
+            console.log(e.scrollTop);
             post.style.top = -(e.scrollTop / 2) + 'px';
         });
     });
