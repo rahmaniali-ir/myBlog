@@ -242,9 +242,8 @@ section.content aside .categories a {
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
     overflow: hidden;
-    padding: 1.5rem 1rem;
     position: relative;
     text-decoration: none;
     transition: all .3s ease;
@@ -264,9 +263,8 @@ section.content aside .categories a .icon {
 }
 
 section.content aside .categories a .icon span {
-    display: block;
-    font-size: 1.5em;
     left: 50%;
+    position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
 }
