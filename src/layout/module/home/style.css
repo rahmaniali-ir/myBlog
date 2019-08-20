@@ -50,6 +50,11 @@ header.greeting .social-box a svg {
     width: 1rem;
 }
 
+header.greeting .social-box a:hover svg,
+header.greeting .social-box a:focus svg {
+    fill: var(--grey3);
+}
+
 /* Greeting left section */
 header.greeting .left {
     flex: 2;
