@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             post.style.top = -(Math.max((posts.length - index - 1), .5) * (level * (top / 4))) + 'px';
         });
 
-        if(top > 80 * vh) {
+        if(top > 50 * vh) {
             console.log('Done!');
         }
     });

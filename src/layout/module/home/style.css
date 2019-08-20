@@ -165,6 +165,12 @@ header.greeting .go-down {
     right: 1rem;
 }
 
+header.greeting .go-down.hide span,
+header.greeting .go-down.hide .icon {
+    opacity: 0;
+    top: -.5rem;
+}
+
 header.greeting .go-down span {
     color: var(--grey4);
     display: block;
