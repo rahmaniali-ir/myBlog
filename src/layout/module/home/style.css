@@ -242,7 +242,7 @@ section.content aside .categories a {
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
-    margin-bottom: 1rem;
+    padding: .5rem 0;
     position: relative;
     text-decoration: none;
     transition: all .3s ease;
@@ -258,6 +258,7 @@ section.content aside .categories a .icon {
     height: 2em;
     margin-left: .5em;
     overflow: hidden;
+    pointer-events: none;
     position: relative;
     transition: all .3s ease;
     width: 2em;
