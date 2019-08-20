@@ -49,7 +49,7 @@ $socialMedias = [
 
         <div class="social-box">
             <?php foreach($socialMedias as $social): ?>
-            <a href="<?= $social['url']; ?>" title="<?= $social['title']; ?>">
+            <a href="<?= $social['url']; ?>" title="<?= $social['title']; ?>" target="_blank">
                 <?= icon($social['icon']); ?>
             </a>
             <?php endforeach; ?>
