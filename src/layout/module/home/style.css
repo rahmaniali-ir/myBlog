@@ -187,7 +187,7 @@ header.greeting .goDown .icon {
 }
 
 header.greeting .goDown .icon svg {
-    fill: var(--grey4);
+    fill: var(--grey3);
     height: 3em;
     transform: rotate(90deg);
     width: 3em;
