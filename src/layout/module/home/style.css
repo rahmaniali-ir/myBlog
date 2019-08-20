@@ -52,7 +52,7 @@ header.greeting .social-box a svg {
 
 header.greeting .social-box a:hover svg,
 header.greeting .social-box a:focus svg {
-    fill: var(--grey3);
+    fill: var(--grey1);
 }
 
 /* Greeting left section */
