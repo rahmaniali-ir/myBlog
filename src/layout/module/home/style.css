@@ -90,7 +90,7 @@ header.greeting .posts .post:nth-child(6) {
     grid-column: span 2;
 }
 
-header.greeting .posts .post .placeHolder {
+header.greeting .posts .post .place-holder {
     align-items: flex-end;
     border: dashed 2px var(--grey7);
     border-radius: inherit;
@@ -107,7 +107,7 @@ header.greeting .posts .post .placeHolder {
     z-index: 0;
 }
 
-header.greeting .posts .post .placeHolder span {
+header.greeting .posts .post .place-holder span {
     color: var(--grey4);
     font-size: .8rem;
     max-width: calc(100% - .5rem);
@@ -146,25 +146,25 @@ header.greeting .hint {
     right: 0;
 }
 
-header.greeting .goDown {
+header.greeting .go-down {
     bottom : 1rem;
     font-size: 1em;
     position: absolute;
     right: 1rem;
 }
 
-header.greeting .goDown span {
+header.greeting .go-down span {
     color: var(--grey4);
     display: block;
     font-size: .7em;
     margin-bottom: .5em;
 }
 
-header.greeting .goDown .icon {
-    animation: goDown 5s linear infinite;
+header.greeting .go-down .icon {
+    animation: go-down 5s linear infinite;
 }
 
-@keyframes goDown {
+@keyframes go-down {
     0%, 70%, 95%, 100% {
         transform: scaleY(1) scaleX(1);
     }
@@ -186,7 +186,7 @@ header.greeting .goDown .icon {
     }
 }
 
-header.greeting .goDown .icon svg {
+header.greeting .go-down .icon svg {
     fill: var(--grey3);
     height: 3em;
     transform: rotate(90deg);

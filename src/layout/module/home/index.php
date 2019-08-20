@@ -21,7 +21,7 @@ $images = glob('src/image/*');
 <header class="greeting">
     <div class="right">
         <h1>سلام، علی رحمانی اینجاست!</h1>
-        
+
         <p>
             <img src="src/image/ali.jpg" alt="Ali Rahmani" class="image">
             من دانشجوی کاردانی نرم افزار در دانشگاه محمد منتظری مشهدم.
@@ -29,6 +29,8 @@ $images = glob('src/image/*');
             :)
             اینجا چیزایی که برام جالبن رو به اشتراک میزارم.
         </p>
+
+        <div class="social-box"></div>
     </div>
 
     <div class="left">
@@ -48,7 +50,7 @@ $images = glob('src/image/*');
         </div>
     </div>
 
-    <div class="goDown">
+    <div class="go-down">
         <span>بقیش این پایینه</span>
         <div class="icon"><?= icon('rotatedArrow'); ?></div>
     </div>
