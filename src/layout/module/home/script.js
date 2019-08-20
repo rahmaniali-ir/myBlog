@@ -3,9 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let posts = document.querySelectorAll('.overview .post');
     
     window.addEventListener('scroll', e => {
-        console.log(window.scrollY);
-        posts.forEach(post => {
-            post.style.top = -(window.scrollY / 2) + 'px';
+        let top = window.scrollY;
+
+        posts.forEach((post, index) => {
+            post.style.top = (-(top / 2) - ((top / 2) * index)) + 'px';
         });
     });
 });
