@@ -39,7 +39,6 @@ $categories = [
     [
         'name' => 'programming',
         'title' => 'برنامه نویسی',
-        'image' => 'programming.jpg',
         'color' => [
             '#0ac',
             '#f55'
@@ -47,8 +46,7 @@ $categories = [
     ],
     [
         'name' => 'life',
-        'title' => 'برنامه نویسی',
-        'image' => 'life.jpg',
+        'title' => 'زندگی',
         'color' => [
             '#0fa',
             '#580'
