@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let level = Math.min(1, overviewAnimHeight / top);
 
         posts.forEach((post, index) => {
-            post.style.top = -(Math.max(index, .5) * (level * (top / 2))) + 'px';
+            post.style.top = -(Math.max((posts.length - index - 1), .5) * (level * (top / 2))) + 'px';
         });
     });
 });
