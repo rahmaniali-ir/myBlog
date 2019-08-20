@@ -30,8 +30,8 @@ $socialMedias = [
     ],
     [
         'title' => 'Codepen',
-        'url' => '#',
-        'icon' => 'https://codepen.io/rahmaniali_ir'
+        'url' => 'https://codepen.io/rahmaniali_ir',
+        'icon' => 'codepen'
     ]
 ];
 
