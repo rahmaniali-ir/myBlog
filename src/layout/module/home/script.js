@@ -5,6 +5,7 @@ const overviewAnimHeight = 40 * vh;
 
 document.addEventListener('DOMContentLoaded', () => {
     let posts = document.querySelectorAll('.greeting .post');
+    let goDown = document.querySelector('.go-down');
     
     window.addEventListener('scroll', () => {
         let top = window.scrollY;
@@ -15,7 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if(top > 50 * vh) {
-            console.log('Done!');
+            goDown.classList.add('hide');
+        } else {
+            goDown.classList.remove('hide');
         }
     });
 });
