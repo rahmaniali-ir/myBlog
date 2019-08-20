@@ -138,7 +138,7 @@ header.overview .posts .post img {
     width: 100%;
 }
 
-header.overview .hit {
+header.overview .hint {
     bottom: 100%;
     font-size: 1rem;
     left: 0;
@@ -147,18 +147,18 @@ header.overview .hit {
     text-align: center;
 }
 
-header.overview .hit span {
+header.overview .hint span {
     color: var(--grey6);
     display: block;
     font-size: .6em;
     transform: translateX(-3em) rotate(-45deg);
 }
 
-header.overview .hit .icon {
+header.overview .hint .icon {
     margin: .2em auto;
 }
 
-header.overview .hit .icon svg {
+header.overview .hint .icon svg {
     fill: var(--grey6);
     height: 2.5em;
     width: 2.5em;
