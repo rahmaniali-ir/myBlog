@@ -68,7 +68,7 @@ header.overview .posts .post {
     max-height: calc(25vh - var(--gap));
     position: relative;
     text-decoration: none;
-    transition: all .3s ease;
+    transition: all .3s cubic-bezier(0.25, 0.1, 0.13, 1.94);
     width: 100%;
     z-index: 1;
 }
