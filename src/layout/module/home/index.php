@@ -123,7 +123,7 @@ $categories = [
                     <?= mb_substr($category['title'], 0, 1); ?>
                 </div>
 
-                <span><?= $category['title']; ?></span>
+                <span class="name"><?= $category['title']; ?></span>
             </a>
             <?php endforeach; ?>
         </section>

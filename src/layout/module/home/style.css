@@ -250,34 +250,29 @@ section.content aside .categories a {
     transition: all .3s ease;
 }
 
-section.content aside .categories a:hover,
-section.content aside .categories a:focus {
-}
-
 section.content aside .categories a .icon {
     border-radius: var(--radius);
     color: #fff;
     display: inline-block;
     font-size: 1rem;
     font-weight: bold;
+    margin-left: .5em;
+    overflow: hidden;
     padding: .5rem;
+    position: relative;
 }
 
-section.content aside .categories a span {
+section.content aside .categories a .icon span {
+    display: block;
+    font-size: 2rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.content aside .categories a .name {
     color: var(--grey5);
     font-size: 1em;
-}
-
-section.content aside .categories a .icon {
-    height: 1.2em;
-    margin-left: .5em;
-    width: 1.2em;
-}
-
-section.content aside .categories a svg {
-    fill: var(--grey5);
-    height: 100%;
-    width: 100%;
 }
 
 section.content main {
