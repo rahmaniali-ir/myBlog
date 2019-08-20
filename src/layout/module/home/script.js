@@ -7,10 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', e => {
         let top = window.scrollY;
 
-        if(top > overviewAnimHeight) {
-            posts.forEach((post, index) => {
-                post.style.top = (-(top / 2) - ((top / 2) * index)) + 'px';
-            });
-        }
+        posts.forEach((post, index) => {
+            post.style.top = (-(top / 2) - ((top / 2) * index) + overviewAnimHeight) + 'px';
+        });
     });
 });
