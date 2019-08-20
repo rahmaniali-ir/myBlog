@@ -49,10 +49,7 @@ $images = glob('src/image/*');
             </a>
             <?php endfor; ?>
 
-            <div class="hint">
-                <span>مطالب تصادفی</span>
-                <div class="icon"><?= icon('curvedDown'); ?></div>
-            </div>
+            <div class="hint">مطالب تصادفی</div>
         </div>
     </div>
 

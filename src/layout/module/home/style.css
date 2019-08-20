@@ -139,29 +139,11 @@ header.greeting .posts .post img {
 }
 
 header.greeting .hint {
-    bottom: 100%;
-    font-size: 1rem;
-    left: 0;
-    /* transform: translateX(-50%); */
+    bottom: calc(100% + .5rem);
+    color: var(--grey4);
+    font-size: .6rem;
     position: absolute;
-    text-align: center;
-}
-
-header.greeting .hint span {
-    color: var(--grey6);
-    display: block;
-    font-size: .6em;
-    transform: translateX(-3em) rotate(-45deg);
-}
-
-header.greeting .hint .icon {
-    margin: .2em auto;
-}
-
-header.greeting .hint .icon svg {
-    fill: var(--grey6);
-    height: 2.5em;
-    width: 2.5em;
+    right: 0;
 }
 
 header.greeting .goDown {
