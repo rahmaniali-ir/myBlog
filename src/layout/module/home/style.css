@@ -238,18 +238,28 @@ section.content aside .categories {
 
 section.content aside .categories a {
     align-items: center;
-    border-radius: 100px;
+    border-radius: var(--radius);
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
+    overflow: hidden;
     padding: .5em 1em;
+    position: relative;
     text-decoration: none;
     transition: all .3s ease;
 }
 
 section.content aside .categories a:hover,
 section.content aside .categories a:focus {
-    background-color: var(--grey8);
+}
+
+section.content aside .categories a img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
 }
 
 section.content aside .categories a span {

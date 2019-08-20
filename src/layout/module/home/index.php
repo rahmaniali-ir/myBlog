@@ -35,6 +35,27 @@ $socialMedias = [
     ]
 ];
 
+$categories = [
+    [
+        'name' => 'programming',
+        'title' => 'برنامه نویسی',
+        'image' => 'programming.jpg',
+        'color' => [
+            '#0ac',
+            '#f55'
+        ]
+    ],
+    [
+        'name' => 'life',
+        'title' => 'برنامه نویسی',
+        'image' => 'life.jpg',
+        'color' => [
+            '#0fa',
+            '#580'
+        ]
+    ]
+];
+
 ?>
 <header class="greeting">
     <div class="right">
@@ -86,12 +107,13 @@ $socialMedias = [
         </header>
 
         <section class="categories">
-            <?php for($i = 0; $i < 10; $i++): ?>
-            <a href="#">
-                <div class="icon"><?= icon('dashboard'); ?></div>
-                <span>دسته بندی ۱</span>
+            <?php foreach($categories as $category): ?>
+            <a href="#<?= $category['name']; ?>">
+                <img src="src/image/<?= $category['image']; ?>" alt="<?= $category['name']; ?>">
+
+                <span><?= $category['title']; ?></span>
             </a>
-            <?php endfor; ?>
+            <?php endforeach; ?>
         </section>
     </aside>
 
