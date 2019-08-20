@@ -267,6 +267,7 @@ section.content aside .categories a:hover .icon,
 section.content aside .categories a:focus .icon {
     background-color: transparent;
     box-shadow: none;
+    transform: scale(1.5);
 }
 
 section.content aside .categories a .icon span {
@@ -282,7 +283,6 @@ section.content aside .categories a .icon span {
 section.content aside .categories a:hover .icon span,
 section.content aside .categories a:focus .icon span {
     color: inherit;
-    transform: translate(-50%, -50%) scale(1.2);
 }
 
 section.content aside .categories a .name {
