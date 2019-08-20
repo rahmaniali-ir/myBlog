@@ -163,12 +163,7 @@ header.greeting .go-down {
     font-size: 1em;
     position: absolute;
     right: 1rem;
-}
-
-header.greeting .go-down.hide span,
-header.greeting .go-down.hide .icon {
-    opacity: 0;
-    top: -.5rem;
+    transition: all .3s ease;
 }
 
 header.greeting .go-down span {
@@ -176,14 +171,10 @@ header.greeting .go-down span {
     display: block;
     font-size: .7em;
     margin-bottom: .5em;
-    position: relative;
-    transition: all .3s ease;
 }
 
 header.greeting .go-down .icon {
     animation: go-down 5s linear infinite;
-    position: relative;
-    transition: all .3s ease;
 }
 
 @keyframes go-down {

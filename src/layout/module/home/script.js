@@ -15,10 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
             post.style.top = -(Math.max((posts.length - index - 1), .5) * (level * (top / 4))) + 'px';
         });
 
-        if(top > 50 * vh) {
-            goDown.classList.add('hide');
-        } else {
-            goDown.classList.remove('hide');
-        }
+        goDown.style.opacity = 1 - (top / (50 * vh));
     });
 });
