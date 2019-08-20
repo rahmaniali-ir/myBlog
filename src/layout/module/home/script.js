@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
             post.style.top = -(Math.max((posts.length - index - 1), .5) * (level * (top / 4))) + 'px';
         });
 
-        goDown.style.opacity = 1 - (top / (50 * vh));
+        let goDownOffset = 1 - (top / (50 * vh));
+        goDown.style.opacity = goDownOffset;
+        goDown.style.transform = `translateY(-${goDownOffset * (5 * vh)});`;
     });
 });
