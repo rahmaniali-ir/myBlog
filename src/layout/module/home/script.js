@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         posts.forEach((post, index) => {
             if(top > overviewAnimHeight) {
-                newPos = -(top / 2) - ((top / 2) * index);
+                newPos = -index * 10;
             }
 
             post.style.top = newPos + 'px';
