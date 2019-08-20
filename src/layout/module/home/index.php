@@ -36,7 +36,7 @@ $images = glob('src/image/*');
         <div class="posts">
             <?php for($i = 0; $i < 6; $i++): ?>
             <a class="post" href="#">
-                <div class="placeHolder">
+                <div class="place-holder">
                     <span><?= getName($images[$i]); ?></span>
                 </div>
                 <div class="image">
