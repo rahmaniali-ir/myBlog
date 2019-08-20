@@ -243,7 +243,6 @@ section.content aside .categories a {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 1rem;
-    overflow: hidden;
     position: relative;
     text-decoration: none;
     transition: all .3s ease;
@@ -260,7 +259,14 @@ section.content aside .categories a .icon {
     margin-left: .5em;
     overflow: hidden;
     position: relative;
+    transition: all .3s ease;
     width: 2em;
+}
+
+section.content aside .categories a:hover .icon,
+section.content aside .categories a:focus .icon {
+    background-color: transparent;
+    box-shadow: none;
 }
 
 section.content aside .categories a .icon span {
@@ -270,6 +276,13 @@ section.content aside .categories a .icon span {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
+    transition: all .3s ease;
+}
+
+section.content aside .categories a:hover .icon span,
+section.content aside .categories a:focus .icon span {
+    color: inherit;
+    transform: translate(-50%, -50%) scale(1.2);
 }
 
 section.content aside .categories a .name {
