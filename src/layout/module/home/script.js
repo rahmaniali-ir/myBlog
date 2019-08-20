@@ -6,9 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
     window.addEventListener('scroll', e => {
         let top = window.scrollY;
+        let level = Math.min(1, overviewAnimHeight / top);
 
         posts.forEach((post, index) => {
-            post.style.top = -((index * ((top / 2) / (posts.length * 2))) + (top / 2)) + 'px';
+            post.style.top = -(index * level) + 'px';
         });
     });
 });
