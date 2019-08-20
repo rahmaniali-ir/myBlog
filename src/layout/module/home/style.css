@@ -242,8 +242,9 @@ section.content aside .categories a {
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
+    margin-bottom: .5rem;
     overflow: hidden;
-    padding: .5em 1em;
+    padding: .5rem 1rem;
     position: relative;
     text-decoration: none;
     transition: all .3s ease;
@@ -253,12 +254,23 @@ section.content aside .categories a:hover,
 section.content aside .categories a:focus {
 }
 
-section.content aside .categories a img {
+section.content aside .categories a img,
+section.content aside .categories a .gradient {
     height: 100%;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
+}
+
+section.content aside .categories a img {
+    filter: grayscale(100%);
+    object-fit: cover;
+    z-index: -2;
+}
+
+section.content aside .categories a .gradient {
+    opacity: .4;
     z-index: -1;
 }
 

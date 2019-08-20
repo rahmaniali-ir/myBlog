@@ -107,9 +107,20 @@ $categories = [
         </header>
 
         <section class="categories">
-            <?php foreach($categories as $category): ?>
+            <?php
+            foreach($categories as $category):
+            
+            if(count($category['color']) == 1) {
+                $color = $category['color'];
+            } else {
+                $color = 'linear-gradient(to bottom left, ';
+                $color .= implode(', ', $category['color']);
+                $color .= ')';
+            }
+            ?>
             <a href="#<?= $category['name']; ?>">
                 <img src="src/image/<?= $category['image']; ?>" alt="<?= $category['name']; ?>">
+                <div class="gradient" style="background: <?= $color; ?> ;"></div>
 
                 <span><?= $category['title']; ?></span>
             </a>
