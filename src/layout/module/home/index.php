@@ -18,7 +18,7 @@ function getName($file) {
 $images = glob('src/image/*');
 
 ?>
-<header class="overview">
+<header class="greeting">
     <div class="right">
         <h1>سلام، علی رحمانی اینجاست!</h1>
         <p>

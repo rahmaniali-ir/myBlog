@@ -1,15 +1,15 @@
 
-header.overview > div {
+header.greeting > div {
     box-sizing: border-box;
     padding: 0 var(--sidePadding);
 }
 
-header.overview .right {
+header.greeting .right {
     flex: 1;
     padding-left: 5vw;
 }
 
-header.overview .image {
+header.greeting .image {
     border-radius: 50%;
     box-sizing: border-box;
     float: right;
@@ -20,37 +20,37 @@ header.overview .image {
     width: 5em;
 }
 
-header.overview h1 {
+header.greeting h1 {
     color: var(--grey1);
     font-size: 1.5rem;
     margin: 0 0 .5em;
 }
 
-header.overview p {
+header.greeting p {
     color: var(--grey2);
     font-size: 1rem;
     margin: 0;
     text-align: justify;
 }
 
-header.overview p a {
+header.greeting p a {
     color: var(--primary);
     position: relative;
     text-decoration: none;
 }
 
-header.overview p a:hover,
-header.overview p a:focus {
+header.greeting p a:hover,
+header.greeting p a:focus {
     color: var(--grey4);
 }
 
-header.overview .left {
+header.greeting .left {
     flex: 2;
     height: 50vh;
     padding-right: 0;
 }
 
-header.overview .posts {
+header.greeting .posts {
     --gap: 1rem;
 
     display: grid;
@@ -61,7 +61,7 @@ header.overview .posts {
     position: relative;
 }
 
-header.overview .posts .post {
+header.greeting .posts .post {
     backface-visibility: hidden;
     border-radius: var(--radius);
     height: 100%;
@@ -73,24 +73,24 @@ header.overview .posts .post {
     z-index: 1;
 }
 
-header.overview .posts:hover .post {
+header.greeting .posts:hover .post {
     filter: grayscale(100%);
     opacity: .8;
     transform: scale(.9);
 }
 
-header.overview .posts .post:hover {
+header.greeting .posts .post:hover {
     filter: grayscale(0);
     opacity: 1;
     z-index: 2;
 }
 
-header.overview .posts .post:nth-child(2),
-header.overview .posts .post:nth-child(6) {
+header.greeting .posts .post:nth-child(2),
+header.greeting .posts .post:nth-child(6) {
     grid-column: span 2;
 }
 
-header.overview .posts .post .placeHolder {
+header.greeting .posts .post .placeHolder {
     align-items: flex-end;
     border: dashed 2px var(--grey7);
     border-radius: inherit;
@@ -107,7 +107,7 @@ header.overview .posts .post .placeHolder {
     z-index: 0;
 }
 
-header.overview .posts .post .placeHolder span {
+header.greeting .posts .post .placeHolder span {
     color: var(--grey4);
     font-size: .8rem;
     max-width: calc(100% - .5rem);
@@ -116,7 +116,7 @@ header.overview .posts .post .placeHolder span {
     white-space: normal;
 }
 
-header.overview .posts .post .image {
+header.greeting .posts .post .image {
     border-radius: inherit;
     height: 100%;
     pointer-events: none;
@@ -126,19 +126,19 @@ header.overview .posts .post .image {
     z-index: 2;
 }
 
-header.overview .posts .post:hover .image {
+header.greeting .posts .post:hover .image {
     transform: translate(-3rem, -2rem) rotate(5deg) scale(1.1);
     z-index: 4;
 }
 
-header.overview .posts .post img {
+header.greeting .posts .post img {
     border-radius: inherit;
     height: 100%;
     object-fit: cover;
     width: 100%;
 }
 
-header.overview .hint {
+header.greeting .hint {
     bottom: 100%;
     font-size: 1rem;
     left: 0;
@@ -147,38 +147,38 @@ header.overview .hint {
     text-align: center;
 }
 
-header.overview .hint span {
+header.greeting .hint span {
     color: var(--grey6);
     display: block;
     font-size: .6em;
     transform: translateX(-3em) rotate(-45deg);
 }
 
-header.overview .hint .icon {
+header.greeting .hint .icon {
     margin: .2em auto;
 }
 
-header.overview .hint .icon svg {
+header.greeting .hint .icon svg {
     fill: var(--grey6);
     height: 2.5em;
     width: 2.5em;
 }
 
-header.overview .goDown {
+header.greeting .goDown {
     bottom : 1rem;
     font-size: 1em;
     position: absolute;
     right: 1rem;
 }
 
-header.overview .goDown span {
+header.greeting .goDown span {
     color: var(--grey4);
     display: block;
     font-size: .7em;
     margin-bottom: .5em;
 }
 
-header.overview .goDown .icon {
+header.greeting .goDown .icon {
     animation: goDown 5s linear infinite;
 }
 
@@ -204,7 +204,7 @@ header.overview .goDown .icon {
     }
 }
 
-header.overview .goDown .icon svg {
+header.greeting .goDown .icon svg {
     fill: var(--grey4);
     height: 3em;
     transform: rotate(90deg);
