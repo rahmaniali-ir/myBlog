@@ -120,7 +120,7 @@ $categories = [
             ?>
             <a href="#<?= $category['name']; ?>">
                 <div class="icon" style="background: <?= $color; ?> ;">
-                    <?= mb_substr($category['title'], 0, 1); ?>
+                    <span><?= mb_substr($category['title'], 0, 1); ?></span>
                 </div>
 
                 <span class="name"><?= $category['title']; ?></span>
