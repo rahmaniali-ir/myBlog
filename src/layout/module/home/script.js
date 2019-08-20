@@ -2,7 +2,7 @@
 const overviewAnimHeight = 300;
 
 document.addEventListener('DOMContentLoaded', () => {
-    let posts = document.querySelectorAll('.overview .post');
+    let posts = document.querySelectorAll('.greeting .post');
     
     window.addEventListener('scroll', () => {
         let top = window.scrollY;
