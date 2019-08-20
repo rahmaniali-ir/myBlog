@@ -47,6 +47,11 @@ $categories = [
         'color' => '#0fa'
     ],
     [
+        'name' => 'personal',
+        'title' => 'شخصی',
+        'color' => '#f55'
+    ],
+    [
         'name' => 'book',
         'title' => 'کتاب',
         'color' => '#9500FF'
