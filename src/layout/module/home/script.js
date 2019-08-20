@@ -6,9 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
     
     window.addEventListener('scroll', e => {
         let top = window.scrollY;
+        let level = overviewAnimHeight / posts.length;
+        let newPos = 0;
 
         posts.forEach((post, index) => {
-            post.style.top = (-(top / 2) - ((top / 2) * index) + overviewAnimHeight) + 'px';
+            if(top > overviewAnimHeight) {
+                newPos = -(top / 2) - ((top / 2) * index);
+            }
+
+            post.style.top = newPos + 'px';
         });
     });
 });
