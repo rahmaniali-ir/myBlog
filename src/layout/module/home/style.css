@@ -231,13 +231,11 @@ section.content aside header {
 }
 
 section.content aside .categories {
-    list-style: none;
     margin: 0;
-    padding-inline-start: 0;
     padding: 0;
 }
 
-section.content aside .categories a {
+.categories > * {
     align-items: center;
     border-radius: var(--radius);
     box-sizing: border-box;
@@ -249,7 +247,7 @@ section.content aside .categories a {
     transition: all .3s ease;
 }
 
-section.content aside .categories a .icon {
+.categories > * .icon {
     background-color: currentColor;
     border-radius: var(--radius);
     box-shadow: 0 5px 8px -5px currentColor;
@@ -265,14 +263,14 @@ section.content aside .categories a .icon {
     width: 2em;
 }
 
-section.content aside .categories a:hover .icon,
-section.content aside .categories a:focus .icon {
+.categories > *:hover .icon,
+.categories > *:focus .icon {
     background-color: transparent;
     box-shadow: none;
     transform: scale(1.5);
 }
 
-section.content aside .categories a .icon span {
+.categories > * .icon span {
     color: #fff;
     left: 50%;
     line-height: 1em;
@@ -282,19 +280,19 @@ section.content aside .categories a .icon span {
     transition: all .3s ease;
 }
 
-section.content aside .categories a:hover .icon span,
-section.content aside .categories a:focus .icon span {
+.categories > *:hover .icon span,
+.categories > *:focus .icon span {
     color: inherit;
 }
 
-section.content aside .categories a .name {
+.categories > * .name {
     color: var(--grey5);
     font-size: 1em;
     transition: all .3s ease;
 }
 
-section.content aside .categories a:hover .name,
-section.content aside .categories a:focus .name {
+.categories > *:hover .name,
+.categories > *:focus .name {
     color: var(--grey2);
 }
 
@@ -314,9 +312,9 @@ section.content main .post article {
 }
 
 section.content main .post article .image {
-    height: 20vh;
+    height: 15vh;
     margin-left: 1rem;
-    width: 10vh;
+    width: 10vw;
 }
 
 section.content main .post article .image img {

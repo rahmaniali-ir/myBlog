@@ -174,9 +174,18 @@ $posts = [
                 <div class="details">
                     <h2><?= $post['title'] ?></h2>
 
-                    <div class="category-box">
-                        <?php foreach($post['categories'] as $category): ?>
-                        <div><?= $categories[$category]['title']; ?></div>
+                    <div class="categories">
+                        <?php
+                        foreach($post['categories'] as $categoryKey):
+                        $category = $categories[$categoryKey];
+                        ?>
+                        <a href="#<?= $category['name']; ?>">
+                            <div class="icon" style="color: <?= $category['color']; ?> ;">
+                                <span><?= mb_substr($category['title'], 0, 1); ?></span>
+                            </div>
+
+                            <span class="name"><?= $category['title']; ?></span>
+                        </a>
                         <?php endforeach; ?>
                     </div>
 
