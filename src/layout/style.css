@@ -138,6 +138,7 @@ body > section {
 
 .categories > * .icon span {
     color: #fff;
+    font-size: 1em;
     left: 50%;
     line-height: 1em;
     position: absolute;

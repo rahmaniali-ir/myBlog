@@ -179,12 +179,10 @@ $posts = [
                         foreach($post['categories'] as $categoryKey):
                         $category = $categories[$categoryKey];
                         ?>
-                        <div>
+                        <div title="#<?= $category['title']; ?>">
                             <div class="icon" style="color: <?= $category['color']; ?> ;">
                                 <span><?= mb_substr($category['title'], 0, 1); ?></span>
                             </div>
-
-                            <span class="name"><?= $category['title']; ?></span>
                         </div>
                         <?php endforeach; ?>
                     </div>
