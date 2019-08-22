@@ -314,9 +314,9 @@ section.content main .post article {
 }
 
 section.content main .post article .image {
-    height: 5rem;
+    height: 20vh;
     margin-left: 1rem;
-    width: 5rem;
+    width: 10vh;
 }
 
 section.content main .post article .image img {
@@ -324,6 +324,11 @@ section.content main .post article .image img {
     height: 100%;
     object-fit: cover;
     width: 100%;
+}
+
+section.content main .post article .category-box {
+    align-items: center;
+    display: flex;
 }
 
 section.content main .post article .details h2 {

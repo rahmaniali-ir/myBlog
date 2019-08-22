@@ -174,15 +174,13 @@ $posts = [
                 <div class="details">
                     <h2><?= $post['title'] ?></h2>
 
-                    <div class="tag-post">
+                    <div class="category-box">
                         <?php foreach($post['categories'] as $category): ?>
                         <div><?= $categories[$category]['title']; ?></div>
                         <?php endforeach; ?>
                     </div>
 
                     <time><?= $post['date']; ?></time>
-
-                    <p><?= $post['summery']; ?></p>
                 </div>
             </article>
         </a>
