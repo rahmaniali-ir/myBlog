@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let level = Math.min(1, overviewAnimHeight / top);
 
         posts.forEach((post, index) => {
-            post.style.top = -(index + 1) - (top / (5 * vh)) + 'px';
+            post.style.top = -(top / (2 * vh) * (index + 1)) + 'px';
         });
 
         goDown.style.opacity = 1 - (top / (50 * vh));
