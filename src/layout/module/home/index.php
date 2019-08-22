@@ -176,7 +176,7 @@ $posts = [
 
                     <div class="tag-post">
                         <?php foreach($post['categories'] as $category): ?>
-                        <a href="#"><?= $categories[$category]['title']; ?></a>
+                        <div><?= $categories[$category]['title']; ?></div>
                         <?php endforeach; ?>
                     </div>
 
