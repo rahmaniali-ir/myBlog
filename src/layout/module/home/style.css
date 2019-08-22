@@ -251,14 +251,12 @@ section.content main .post article {
 }
 
 section.content main .post article .image {
-    height: 15vh;
     margin-left: 1rem;
-    width: 10vw;
 }
 
 section.content main .post article .image img {
     border-radius: var(--radius);
-    height: 100%;
+    max-height: 15vh;
     object-fit: cover;
     width: 100%;
 }
@@ -280,5 +278,5 @@ section.content main .post article .details .categories {
 }
 
 section.content main .post article .details .categories > * {
-    margin: .5rem;
+    margin-left: .5rem;
 }
