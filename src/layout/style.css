@@ -101,3 +101,64 @@ body > section {
     user-select: none;
     width: 100vw;
 }
+
+.categories > * {
+    align-items: center;
+    border-radius: var(--radius);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    padding: .5rem 0;
+    position: relative;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.categories > * .icon {
+    background-color: currentColor;
+    border-radius: var(--radius);
+    box-shadow: 0 5px 8px -5px currentColor;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 2em;
+    margin-left: .5em;
+    overflow: hidden;
+    pointer-events: none;
+    position: relative;
+    transition: all .3s ease;
+    width: 2em;
+}
+
+.categories > *:hover .icon,
+.categories > *:focus .icon {
+    background-color: transparent;
+    box-shadow: none;
+    transform: scale(1.5);
+}
+
+.categories > * .icon span {
+    color: #fff;
+    left: 50%;
+    line-height: 1em;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease;
+}
+
+.categories > *:hover .icon span,
+.categories > *:focus .icon span {
+    color: inherit;
+}
+
+.categories > * .name {
+    color: var(--grey5);
+    font-size: 1em;
+    transition: all .3s ease;
+}
+
+.categories > *:hover .name,
+.categories > *:focus .name {
+    color: var(--grey2);
+}
