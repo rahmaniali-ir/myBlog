@@ -273,3 +273,8 @@ section.content main .post article .details h2 {
     font-size: 1rem;
     margin: 0;
 }
+
+section.content main .post article .details .categories {
+    display: flex;
+    font-size: .8rem;
+}
