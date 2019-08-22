@@ -108,7 +108,7 @@ body > section {
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
-    padding: .5rem 0;
+    padding: .5em 0;
     position: relative;
     text-decoration: none;
     transition: all .3s ease;
@@ -119,7 +119,7 @@ body > section {
     border-radius: var(--radius);
     box-shadow: 0 5px 8px -5px currentColor;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: bold;
     height: 2em;
     overflow: hidden;

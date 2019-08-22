@@ -278,3 +278,7 @@ section.content main .post article .details .categories {
     display: flex;
     font-size: .8rem;
 }
+
+section.content main .post article .details .categories > * {
+    margin: .5rem;
+}
