@@ -6,6 +6,7 @@ function getTitle() {
 
 function getContent() {
 global $icons;
+$lorem = 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.';
 
 function getName($file) {
     $pos = strrpos($file, '/');
@@ -60,6 +61,42 @@ $categories = [
         'name' => 'goof',
         'title' => 'مسخره بازی',
         'color' => '#FDB90A'
+    ]
+];
+
+$posts = [
+    [
+        'id' => 1,
+        'title' => 'متن پست',
+        'categories' => [
+            0,
+            1,
+            2
+        ],
+        'image' => $images[0],
+        'summery' => $lorem,
+        'date' => '1398/06/01'
+    ],
+    [
+        'id' => 2,
+        'title' => 'متن پست',
+        'categories' => [
+            4,
+            2
+        ],
+        'image' => $images[0],
+        'summery' => $lorem,
+        'date' => '1398/06/01'
+    ],
+    [
+        'id' => 3,
+        'title' => 'متن پست',
+        'categories' => [
+            3
+        ],
+        'image' => $images[0],
+        'summery' => $lorem,
+        'date' => '1398/06/01'
     ]
 ];
 
@@ -127,19 +164,29 @@ $categories = [
     </aside>
 
     <main>
-        <?php for($i = 3; $i < 8; $i++): ?>
+        <?php foreach($posts as $post): ?>
         <a href="#" class="post">
             <article>
                 <div class="image">
-                    <img src="<?= $images[$i]; ?>" alt="#">
+                    <img src="<?= $post['image']; ?>" alt="#">
                 </div>
 
                 <div class="details">
-                    <h2>عنوان مطلب</h2>
+                    <h2><?= $post['title'] ?></h2>
+
+                    <div class="tag-post">
+                        <?php foreach($post['categories'] as $category): ?>
+                        <a href="#"><?= $categories[$category]['title']; ?></a>
+                        <?php endforeach; ?>
+                    </div>
+
+                    <time><?= $post['date']; ?></time>
+
+                    <p><?= $post['summery']; ?></p>
                 </div>
             </article>
         </a>
-        <?php endfor; ?>
+        <?php endforeach; ?>
     </main>
 </section>
 <?php
