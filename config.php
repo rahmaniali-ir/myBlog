@@ -1,6 +1,6 @@
 <?php
 
-$protocol = $_SERVER['SERVER_PROTOCOL'];
+$protocol = $_SERVER['SERVER_PROTOCOL'] == 'HTTP/1.1' ? 'https://' : 'http://';
 echo $protocol;
 // Define constants
 define('SITE_URL', 'http://rahmaniali.ir/');
