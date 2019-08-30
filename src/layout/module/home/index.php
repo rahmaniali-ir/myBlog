@@ -1,9 +1,5 @@
 <?php
 
-function getProtocol() {
-    return strpos($_SERVER['SCRIPT_URI'], 'https://') === false ? 'http://' : 'https://';
-}
-
 function getTitle() {
     return 'Ali Rahmani';
 }
@@ -198,7 +194,6 @@ $posts = [
         <?php endforeach; ?>
     </main>
 </section>
-<pre><?= getProtocol(); ?></pre>
 <?php
 }
 ?>
