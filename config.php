@@ -1,10 +1,9 @@
 <?php
 
-$protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === 0 ? 'https://' : 'http://';
-$protocol = 'https://';
+$protocol = $_SERVER['SERVER_PROTOCOL'];
 echo $protocol;
 // Define constants
-define('SITE_URL', $protocol . 'rahmaniali.ir/');
+define('SITE_URL', 'http://rahmaniali.ir/');
 define('SITE_PATH', __DIR__ . DIRECTORY_SEPARATOR);
 define('SITE_TITLE', 'Ali Rahmani');
 
