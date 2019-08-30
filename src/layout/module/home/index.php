@@ -16,8 +16,6 @@ function getName($file) {
     return $name;
 }
 
-$protocol = $_SERVER['REQUEST_SCHEME'];
-
 $images = glob('src/image/*');
 
 $socialMedias = [
@@ -106,7 +104,6 @@ $posts = [
 <header class="greeting">
     <div class="right">
         <h1>سلام، علی رحمانی اینجاست!</h1>
-        <span><?= $protocol; ?></span>
 
         <p>
             من دانشجوی کاردانی نرم افزار در دانشگاه محمد منتظری مشهدم.
@@ -197,6 +194,7 @@ $posts = [
         <?php endforeach; ?>
     </main>
 </section>
+<pre><?= print_r($_SERVER); ?></pre>
 <?php
 }
 ?>
