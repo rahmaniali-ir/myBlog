@@ -106,6 +106,7 @@ $posts = [
 <header class="greeting">
     <div class="right">
         <h1>سلام، علی رحمانی اینجاست!</h1>
+        <span><?= $protocol; ?></span>
 
         <p>
             من دانشجوی کاردانی نرم افزار در دانشگاه محمد منتظری مشهدم.
@@ -164,7 +165,7 @@ $posts = [
             <?php endforeach; ?>
         </section>
     </aside>
-    <?= $protocol; ?>
+    
     <main>
         <?php foreach($posts as $post): ?>
         <a href="#" class="post">
