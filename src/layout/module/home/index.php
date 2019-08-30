@@ -16,6 +16,9 @@ function getName($file) {
     return $name;
 }
 
+$protocol = $_SERVER['SERVER_PROTOCOL'] == 'HTTP/1.1' ? 'https://' : 'http://';
+echo $protocol;
+
 $images = glob('src/image/*');
 
 $socialMedias = [
