@@ -15,7 +15,7 @@ function getHomeURL($path = null) {
 }
 
 function getModuleName() {
-    $url = 'http://';
+    $url = $_SERVER['SERVER_PROTOCOL'] == 'HTTP/1.1' ? 'https://' : 'http://';
     $url .= $_SERVER['SERVER_NAME'];
     $url .= $_SERVER['REQUEST_URI'];
 
