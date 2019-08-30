@@ -16,8 +16,7 @@ function getName($file) {
     return $name;
 }
 
-$protocol = $_SERVER['SERVER_PROTOCOL'] == 'HTTP/1.1' ? 'https://' : 'http://';
-echo $protocol;
+$protocol = $_SERVER['REQUEST_SCHEME'];
 
 $images = glob('src/image/*');
 
@@ -165,7 +164,7 @@ $posts = [
             <?php endforeach; ?>
         </section>
     </aside>
-
+    <?= $protocol; ?>
     <main>
         <?php foreach($posts as $post): ?>
         <a href="#" class="post">
