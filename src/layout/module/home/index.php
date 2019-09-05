@@ -164,6 +164,9 @@ $posts = [
     </aside>
     
     <main>
+        <header>
+            <span>دیگر پست ها:</span>
+        </header>
         <?php foreach($posts as $post): ?>
         <a href="#" class="post">
             <article>
