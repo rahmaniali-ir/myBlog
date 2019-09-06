@@ -225,7 +225,6 @@ section.content > * > header {
 }
 
 section.content aside {
-    flex: 1;
     padding-left: 5vw;
     text-align: right;
 }
@@ -236,7 +235,7 @@ section.content aside .categories {
 }
 
 section.content main {
-    flex: 3;
+    flex: 1;
 }
 
 section.content main .post {
