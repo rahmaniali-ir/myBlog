@@ -217,17 +217,17 @@ section.content > * {
     min-height: 100%;
 }
 
-section.content aside {
-    flex: 1;
-    padding-left: 5vw;
-    text-align: right;
-}
-
-section.content aside header {
+section.content > * > header {
     box-sizing: border-box;
     color: var(--grey4);
     font-weight: bold;
     padding: 0 0 1em;
+}
+
+section.content aside {
+    flex: 1;
+    padding-left: 5vw;
+    text-align: right;
 }
 
 section.content aside .categories {
